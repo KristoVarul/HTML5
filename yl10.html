@@ -4,22 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Õpime HTML5">
-    <meta name="author" content="Kristo Varul"> 
-    <link rel="apple-touch-icon" sizes="180x180" href=".img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href=".img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href=".img/favicon-16x16.png">
-    <link rel="manifest" href="img/site.webmanifest">  
-    <title>Ülesanne 02 &copy;</title>
+    <meta name="author" content="Jarek Mandre">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <title>Ülesanne 10</title>
 </head>
 <body>
-    <!-- Kristo 17.11.25 -->
-    <h1>ÕPILASE REGISTREERIMISVORM</h1>
-    <form action="" method="get">
-        <fieldset>
-            <legend>Isikuandmed</legend>
-            <label for="fname">Eesnimi</label>
-            <input type="text" required placeholder="Kristo Varul" maxlength="30">
-        </fieldset>
-    </form>
+<!-- Kristo Varul, 27.11.25 -->
+ <h1> ÕPILASE REGISTREERIMISVORM </h1>
+<form action="#" method="post" autocomplete="on">
+  <fieldset>
+    <legend>Isikuandmed</legend>
+        <label for="fname">Eesnimi</label><br>
+        <input type="text" id="fname" required placeholder="nt Kristo" maxlength="30" required>
+        <p> </p>
+        <label for="fname">Perenimi</label><br>
+        <input type="text" id="fname" required placeholder="nt Varul" maxlength="30" required>
+        <p> </p>
+        <label for="fname">Sünnikuupäev</label><br>
+        <input type="date" value="1990-01-01" min="1990-01-01" max="2025-11-27" required>
+        <p> </p>
+        <label for="fname">Sugu</label><br>
+        <input type="radio" name="tuba" value="Male" required> Mees
+        <input type="radio" name="tuba" value="Female" required> Naine
+        <input type="radio" name="tuba" value="imelik" required> Muu
+    </fieldset>
+    <fieldset>
+        <legend>Kontakt</legend>
+        <label for="fname">E-post</label><br>
+        <input type="email" name="Email" required placeholder="nt nimi.@kool.ee" maxlength="100" required>
+        <p> </p>
+        <label for="fname">Mobiiltelefon</label><br>
+        <input type="tel" required pattern="+372[0-9]{7,8}" required placeholder="+372 5918 8273" required>
+        <p> </p>
+        <label for="fname">Aadress</label><br>
+        <textarea name="Aadress" rows="4" cols="30"></textarea>
+        <p> </p>
+        <label for="fname">Linn/asula</label><br>
+        <input type="text" name="Linn/asula" required placeholder="nt Uuemõisa" maxlength="30" required>
+        <p> </p>
+        <label for="fname">Postiindeks</label><br>
+        <input type="number" required pattern="/*+#¤&\" required placeholder="nt 80182" maxlength="5" min="1" max="92414" required>
+        <p> </p>
+        <label for="fname">Riik</label><br>
+        <input type="text" value="Eesti" disabled>
+        <p> </p>
+    </fieldset>
+    <fieldset>
+        <legend>Muu info</legend>
+        <label for="fname">Huvialad</label><br>
+        <input type="checkbox" name="Drawing"> Tantsimine
+        <input type="checkbox" name="dance"> Uisutamine
+        <input type="checkbox" name="Singing"> Sulgpall
+        <input type="checkbox" name="cooking"> Arvutimängud
+        <input type="checkbox" name="other"> Muu: <input type="text" name="muu tegevus" placeholder="täpsusta (Kuni 30 märki)" maxlength="30">
+        <p> </p>
+        <legend>Isiklik veebileht</legend>
+        <input type="url" id="my_url" name="my_url" placeholder="https://minuleht.ee" required pattern="https?://.*" title="Isiklik veebileht">
+        <p> </p>
+        <legend>Eelistatud Teemavärv (Valikuline)</legend>
+        <input type="color" value="#ff0000">
+        <p> </p>
+        <legend>Dokumendid (PDF või pilt)</legend>
+        <input type="file" accept="image/*,.pdf" >
+        <p> </p>
+    </fieldset>
+    <fieldset>
+        <legend>Nõustumine</legend>
+        <input type="checkbox" name="Drawing"> Kinnitan, et andmed on õiged ja luban nende töötlemist vastavalt kooli tingimustele.
+    </fieldset>
+    <p> </p>
+    <button type="submit">Saada</button>
+    <button type="reset">Tühjenda</button>
+</form>
 </body>
 </html>
