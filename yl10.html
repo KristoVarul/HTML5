@@ -18,63 +18,63 @@
         <fieldset>
             <legend>isikuandmed</legend>
             <label for="fname">Eesnimi</label><br>
-            <input type="text" id="fname" placeholder="nt Kristo" maxlength="30" required>
-            <p></p>
+            <input type="text" id="fname" placeholder="nt Kristo" maxlength="30" required><br><br>
+
             <label for="lname">Perekonnanimi</label><br>
-            <input type="text" id="lname" placeholder="nt Varul" maxlength="30" required>
-            <p></p>
-            <label for="birth">Sünnikuupäev</label>
-            <input type="date" id="birth" name="birth" value="1990-01-01" min="1990-01-01" max="2025-11-27" required>
-            <p></p>
+            <input type="text" id="lname" placeholder="nt Varul" maxlength="30" required><br><br>
+            
+            <label for="birth">Sünnikuupäev</label><br>
+            <input type="date" id="birth" name="birth" value="1990-01-01" min="1990-01-01" max="2025-11-27" required><br><br>
+            
             <label>Sugu</label><br>
-            <input type="radio" name="sugu" value="Male" required> Mees
-            <input type="radio" name="sugu" value="Female" required> Naine
+            <input type="radio" name="sugu" value="Male" required> Mees<br>
+            <input type="radio" name="sugu" value="Female" required> Naine<br><br>
         </fieldset>
         <fieldset>
             <legend>Kontakt</legend>
-            <label for="email">E-post</label>
-            <input type="email" id="email" name="Email" placeholder="nt nimi.@kool.ee" maxlength="100" required>
-            <p></p>
+            <label for="email">E-post</label><br>
+            <input type="email" id="email" name="Email" placeholder="nt nimi.@kool.ee" maxlength="100" required><br><br>
+            
             <label for="tel">Mobiiltelefon</label><br>
-            <input type="tel" id="tel" name="tel" pattern="+372[0-9]{7,8}" placeholder="+37256917318" required>
-            <p></p>
+            <input type="tel" id="tel" name="tel" pattern="+372[0-9]{7,8}" placeholder="+37256917318" required><br><br>
+            
             <label for="aadress">Aadress</label><br>
-            <textarea id="aadress" name="Aadress" rows="4" cols="30"></textarea>
-            <p></p>
+            <textarea id="aadress" name="Aadress" rows="4" cols="30"></textarea><br><br>
+            
             <label for="linn">linn/asula</label><br>
-            <input type="text" id="linn" name="linn" placeholder="nt Uuemõisa" maxlength="30" required>
-            <p></p>
+            <input type="text" id="linn" name="linn" placeholder="nt Uuemõisa" maxlength="30" required><br><br>
+            
             <label for="post">Postiindeks</label><br>
-            <input type="number" id="post" name="post" placeholder="nt 90401" min="10000" max="99999" required>
-            <p></p>
+            <input type="number" id="post" name="post" placeholder="nt 90401" min="10000" max="99999" required><br><br>
+            
             <label for="riik">Riik</label><br>
-            <input type="text" id="riik" name="riik" value=" nt Eesti" required>
-            <p></p>
+            <input type="text" id="riik" name="riik" value=" nt Eesti" required><br><br>
+            
         </fieldset>
         <fieldset>
             <legend>Muu info</legend>
             <label for="fname">Huvialad</label><br>
-            <input type="checkbox" name="Drawing"> Tantsimine
-            <input type="checkbox" name="dance"> Uisutamine
-            <input type="checkbox" name="Singing"> Sulgpall
-            <input type="checkbox" name="cooking"> Lauamängud
-            <input type="checkbox" name="other"> Muu: <input type="text" name="muu tegevus" placeholder="täpsusta (kuni 30 märki)" maxlength="30">
-            <p></p>
-            <label>Isiklik veebileht</label>
-            <input type="url" id="my_url" name="mu_url" placeholder="https://minuleht.ee" pattern="https?://.*" title="Isiklik veebileht">
-            <p></p>
-            <label>Eelistatud teemavärv (valikuline)</label>
-            <input type="color" value="#ff0000">
-            <p></p>
-            <label>Dokumendid (PDF või pilt)</label>
-            <input type="file" accept="image/*,.pdf">
-            <p></p>
+            <input type="checkbox" name="Drawing"> Tantsimine<br>
+            <input type="checkbox" name="dance"> Uisutamine<br>
+            <input type="checkbox" name="Singing"> Sulgpall<br>
+            <input type="checkbox" name="cooking"> Lauamängud<br>
+            <input type="checkbox" name="other"> Muu: <input type="text" name="muu tegevus" placeholder="täpsusta (kuni 30 märki)" maxlength="30"><br><br>
+            
+            <label>Isiklik veebileht</label><br>
+            <input type="url" id="my_url" name="mu_url" placeholder="https://minuleht.ee" pattern="https?://.*" title="Isiklik veebileht"><br><br>
+            
+            <label>Eelistatud teemavärv (valikuline)</label><br>
+            <input type="color" value="#ff0000"><br><br>
+            
+            <label>Dokumendid (PDF või pilt)</label><br>
+            <input type="file" accept="image/*,.pdf"><br><br>
+            
         </fieldset>
         <fieldset>
             <legend>Nõustamine</legend>
-            <input type="checkbox" name="Drawing"> Kinnitan, et andmed on õiged ja luban nende töötlemist vastavalt kooli tingimustele.
+            <input type="checkbox" name="Drawing"> Kinnitan, et andmed on õiged ja luban nende töötlemist vastavalt kooli tingimustele.<br><br>
         </fieldset>
-        <p></p>
+        
         <button type="submit">Saada</button>
         <button type="reset">Tühjenda</button>
     </form>
