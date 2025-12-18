@@ -18,37 +18,37 @@
         <fieldset>
             <legend>isikuandmed</legend>
             <label for="fname">Eesnimi</label><br>
-            <input type="text" id="fname" required placeholder="nt Kristo" maxlength="30" required>
+            <input type="text" id="fname" placeholder="nt Kristo" maxlength="30" required>
             <p></p>
-            <label for="fname">Perekonnanimi</label><br>
-            <input type="text" id="fname" required placeholder="nt Varul" maxlength="30" required>
+            <label for="lname">Perekonnanimi</label><br>
+            <input type="text" id="lname" placeholder="nt Varul" maxlength="30" required>
             <p></p>
-            <label for="fname">Sünnikuupäev</label><br>
-            <input type="date" value="1990-01-01" min="1990-01-01" max="2025-11-27" required>
+            <label for="birth">Sünnikuupäev</label>
+            <input type="date" id="birth" name="birth" value="1990-01-01" min="1990-01-01" max="2025-11-27" required>
             <p></p>
-            <label for=""fname>Sugu</label><br>
-            <input type="radio" name="tuba" value="Male" required> Mees
-            <input type="radio" name="tuba" value="Female" required> Naine
+            <label>Sugu</label><br>
+            <input type="radio" name="sugu" value="Male" required> Mees
+            <input type="radio" name="sugu" value="Female" required> Naine
         </fieldset>
         <fieldset>
             <legend>Kontakt</legend>
-            <label for="fname">E-post</label><br>
-            <input type="email" name="Email" required placeholder="nt nimi.@kool.ee" maxlength="100" required>
+            <label for="email">E-post</label>
+            <input type="email" id="email" name="Email" placeholder="nt nimi.@kool.ee" maxlength="100" required>
             <p></p>
-            <label for="fname">Mobiiltelefon</label><br>
-            <input type="tel" required pattern="+372[0-9]{7,8}" required placerholder="+372 5691 7318" required>
+            <label for="tel">Mobiiltelefon</label><br>
+            <input type="tel" id="tel" name="tel" pattern="+372[0-9]{7,8}" placeholder="+37256917318" required>
             <p></p>
-            <label for="fname">Aadress</label><br>
-            <textarea name="Aadress" rows="4" cols="30"></textarea>
+            <label for="aadress">Aadress</label><br>
+            <textarea id="aadress" name="Aadress" rows="4" cols="30"></textarea>
             <p></p>
-            <label for="fname">linn/asula</label><br>
-            <input type="text" name="Linn/asula" required placeholder="nt Uuemõisa" maxlength="30" required>
+            <label for="linn">linn/asula</label><br>
+            <input type="text" id="linn" name="linn" placeholder="nt Uuemõisa" maxlength="30" required>
             <p></p>
-            <label for="fname">Postiindeks</label><br>
-            <input type="number" required pattern="/*+#¤&\" required placeholder="nt 90401" maxlength="5" min="1" max="94201" required>
+            <label for="post">Postiindeks</label><br>
+            <input type="number" id="post" name="post" placeholder="nt 90401" min="10000" max="99999" required>
             <p></p>
-            <label for="fname">Riik</label><br>
-            <input type="text" value=" nt Eesti" enabled>
+            <label for="riik">Riik</label><br>
+            <input type="text" id="riik" name="riik" value=" nt Eesti" required>
             <p></p>
         </fieldset>
         <fieldset>
@@ -60,13 +60,13 @@
             <input type="checkbox" name="cooking"> Lauamängud
             <input type="checkbox" name="other"> Muu: <input type="text" name="muu tegevus" placeholder="täpsusta (kuni 30 märki)" maxlength="30">
             <p></p>
-            <legend>Isiklik veebileht</legend>
-            <input type="url" id="my_url" name="mu_url" placeholder="https://minuleht.ee" required pattern="https?://.*" tutle="Isiklik veebileht">
+            <label>Isiklik veebileht</label>
+            <input type="url" id="my_url" name="mu_url" placeholder="https://minuleht.ee" pattern="https?://.*" title="Isiklik veebileht">
             <p></p>
-            <legend>Eelistatud teemavärv (valikuline)</legend>
+            <label>Eelistatud teemavärv (valikuline)</label>
             <input type="color" value="#ff0000">
             <p></p>
-            <legend>Dokumendid (PDF või pilt)</legend>
+            <label>Dokumendid (PDF või pilt)</label>
             <input type="file" accept="image/*,.pdf">
             <p></p>
         </fieldset>
